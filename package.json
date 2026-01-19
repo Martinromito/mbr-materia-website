@@ -1,20 +1,21 @@
 {
-  "name": "terra-cemento-website",
+  "name": "mbr-materia-website",
   "version": "1.0.0",
-  "description": "Sitio web profesional para Terra Cemento - Arte decorativo en cemento artesanal",
+  "description": "Sitio web profesional para MBR Materia - Arte decorativo artesanal",
   "main": "index.html",
   "scripts": {
     "dev": "npx -y serve -l 3000",
     "start": "npx -y serve -l 3000",
+    "build": "echo 'Static site - no build needed'",
     "preview": "npx -y serve -l 8080"
   },
   "keywords": [
-    "terra-cemento",
+    "mbr-materia",
     "cemento-artesanal",
     "decoracion",
     "argentina",
     "landing-page"
   ],
-  "author": "Terra Cemento",
+  "author": "MBR Materia",
   "license": "MIT"
 }

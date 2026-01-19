@@ -1,4 +1,4 @@
-# 🏺 Terra Cemento - Sitio Web
+# 🏺 MBR Materia - Sitio Web
 
 Sitio web profesional para emprendimiento de arte decorativo en cemento hecho a mano en Argentina.
 
@@ -15,7 +15,7 @@ Este proyecto incluye:
 ## 🎨 Identidad de Marca
 
 ### Nombre Seleccionado
-**TERRA CEMENTO**
+**MBR Materia**
 
 ### Paleta de Colores
 - **Beige claro/Arena**: #F5F1E8
@@ -199,5 +199,5 @@ Si necesitás ayuda con el sitio, podés:
 
 ---
 
-**Hecho con ❤️ para Terra Cemento**  
+**Hecho con ❤️ para MBR Materia**  
 *Objetos únicos para espacios únicos* 🇦🇷

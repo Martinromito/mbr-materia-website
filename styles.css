@@ -329,10 +329,7 @@ a {
 
 .image-placeholder {
     width: 100%;
-    aspect-ratio: 4/5;
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-    border-radius: 4px;
-    box-shadow: var(--shadow-lg);
+    aspect-ratio: 1;
     background-size: cover;
     background-position: center;
 }

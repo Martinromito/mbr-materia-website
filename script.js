@@ -56,11 +56,12 @@ animatedElements.forEach(el => {
 // Load product images from uploaded image
 // Replace these paths with your actual product photos
 const productImages = {
-    'product-1': 'images/florero-alto.png',
-    'product-2': 'images/porta-velas.png',
+    'product-1': 'images/florero-alto.jpg',
+    'product-2': 'images/porta-velas.jpg',
     'product-3': 'images/plato-decorativo.png',
-    'product-4': 'images/plato-decorativo.png', // Reutilizamos hasta tener foto específica
-    'product-5': 'images/porta-velas.png' // Reutilizamos hasta tener foto específica
+    'product-4': 'images/plato-ovalado.jpg',
+    'product-5': 'images/porta-velas.jpg',
+    'product-6': 'images/florero-bajo.jpg',
 };
 
 // Apply images to products
@@ -74,7 +75,7 @@ Object.keys(productImages).forEach(id => {
 // About section image - usando la foto grupal de productos
 const aboutImage = document.getElementById('about-image');
 if (aboutImage) {
-    aboutImage.style.backgroundImage = `url('images/productos-grupo.png')`;
+    aboutImage.style.backgroundImage = `url('images/logo.jpg')`;
 }
 
 // Parallax effect for hero section
@@ -93,6 +94,3 @@ productCards.forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
 });
 
-// Console message
-console.log('%c🏺 Terra Cemento', 'font-size: 24px; font-weight: bold; color: #8B8680;');
-console.log('%cDiseño artesanal en cemento para tu hogar', 'font-size: 14px; color: #3A3632;');
