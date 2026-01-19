@@ -1,0 +1,20 @@
+{
+  "name": "terra-cemento-website",
+  "version": "1.0.0",
+  "description": "Sitio web profesional para Terra Cemento - Arte decorativo en cemento artesanal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve -l 3000",
+    "start": "npx -y serve -l 3000",
+    "preview": "npx -y serve -l 8080"
+  },
+  "keywords": [
+    "terra-cemento",
+    "cemento-artesanal",
+    "decoracion",
+    "argentina",
+    "landing-page"
+  ],
+  "author": "Terra Cemento",
+  "license": "MIT"
+}
