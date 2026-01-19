@@ -54,17 +54,16 @@ animatedElements.forEach(el => {
 });
 
 // Load product images from uploaded image
-// Since we have the actual product image, we'll use it as a placeholder
-// In production, you would replace these with actual product photos
+// Replace these paths with your actual product photos
 const productImages = {
-    'product-1': 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23F5F1E8" width="400" height="400"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%238B8680"%3EFlorero Alto%3C/text%3E%3C/svg%3E',
-    'product-2': 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23D4CFC0" width="400" height="400"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%238B8680"%3EFlorero Bajo%3C/text%3E%3C/svg%3E',
-    'product-3': 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23F5F1E8" width="400" height="400"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%238B8680"%3EPlato Irregular%3C/text%3E%3C/svg%3E',
-    'product-4': 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23D4CFC0" width="400" height="400"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%238B8680"%3EPlato Ovalado%3C/text%3E%3C/svg%3E',
-    'product-5': 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23F5F1E8" width="400" height="400"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%238B8680"%3EPorta Velas%3C/text%3E%3C/svg%3E'
+    'product-1': 'images/florero-alto.png',
+    'product-2': 'images/porta-velas.png',
+    'product-3': 'images/plato-decorativo.png',
+    'product-4': 'images/plato-decorativo.png', // Reutilizamos hasta tener foto específica
+    'product-5': 'images/porta-velas.png' // Reutilizamos hasta tener foto específica
 };
 
-// Apply placeholder images
+// Apply images to products
 Object.keys(productImages).forEach(id => {
     const element = document.getElementById(id);
     if (element) {
@@ -72,10 +71,10 @@ Object.keys(productImages).forEach(id => {
     }
 });
 
-// About section image placeholder
+// About section image - usando la foto grupal de productos
 const aboutImage = document.getElementById('about-image');
 if (aboutImage) {
-    aboutImage.style.backgroundImage = `url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"%3E%3Crect fill="%23D4CFC0" width="400" height="500"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="18" fill="%238B8680"%3EProceso Artesanal%3C/text%3E%3C/svg%3E')`;
+    aboutImage.style.backgroundImage = `url('images/productos-grupo.png')`;
 }
 
 // Parallax effect for hero section
