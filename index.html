@@ -29,9 +29,35 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#proceso">Proceso</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li class="cart-nav-item">
+                    <button id="cart-toggle" class="cart-icon-btn">
+                        <span class="cart-icon">🛒</span>
+                        <span id="cart-badge" class="cart-badge">0</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button id="cart-close" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Items will be injected here -->
+            <div class="empty-msg">Tu carrito está vacío</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0</span>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary btn-block" disabled>Iniciar Pago</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
@@ -93,8 +119,9 @@
                             <li>Cada pieza es única</li>
                         </ul>
                         <div class="product-footer">
-                            <span class="product-price">$12.500</span>
-                            <a href="#contacto" class="btn btn-secondary">Consultar</a>
+                            <span class="product-price" data-price="12500">$12.500</span>
+                            <button class="btn btn-secondary add-to-cart" data-id="product-1"
+                                data-name="Florero Estriado Alto" data-price="12500">Añadir</button>
                         </div>
                     </div>
                 </div>
@@ -112,8 +139,9 @@
                             <li>Diseño versátil</li>
                         </ul>
                         <div class="product-footer">
-                            <span class="product-price">$8.900</span>
-                            <a href="#contacto" class="btn btn-secondary">Consultar</a>
+                            <span class="product-price" data-price="8900">$8.900</span>
+                            <button class="btn btn-secondary add-to-cart" data-id="product-6"
+                                data-name="Florero Estriado Bajo" data-price="8900">Añadir</button>
                         </div>
                     </div>
                 </div>
@@ -131,8 +159,9 @@
                             <li>Uso decorativo y funcional</li>
                         </ul>
                         <div class="product-footer">
-                            <span class="product-price">$7.500</span>
-                            <a href="#contacto" class="btn btn-secondary">Consultar</a>
+                            <span class="product-price" data-price="7500">$7.500</span>
+                            <button class="btn btn-secondary add-to-cart" data-id="product-3"
+                                data-name="Plato Decorativo Irregular" data-price="7500">Añadir</button>
                         </div>
                     </div>
                 </div>
@@ -150,8 +179,9 @@
                             <li>Acabado artesanal</li>
                         </ul>
                         <div class="product-footer">
-                            <span class="product-price">$9.200</span>
-                            <a href="#contacto" class="btn btn-secondary">Consultar</a>
+                            <span class="product-price" data-price="9200">$9.200</span>
+                            <button class="btn btn-secondary add-to-cart" data-id="product-4"
+                                data-name="Plato Ovalado con Textura" data-price="9200">Añadir</button>
                         </div>
                     </div>
                 </div>
@@ -169,8 +199,9 @@
                             <li>Diseño minimalista</li>
                         </ul>
                         <div class="product-footer">
-                            <span class="product-price">$6.800</span>
-                            <a href="#contacto" class="btn btn-secondary">Consultar</a>
+                            <span class="product-price" data-price="6800">$6.800</span>
+                            <button class="btn btn-secondary add-to-cart" data-id="product-5"
+                                data-name="Porta Velas Artesanal" data-price="6800">Añadir</button>
                         </div>
                     </div>
                 </div>
@@ -299,6 +330,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Notifications Toast -->
+    <div id="toast" class="toast">Producto añadido al carrito</div>
 
     <script src="script.js"></script>
 </body>

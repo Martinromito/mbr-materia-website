@@ -4,7 +4,8 @@
   "description": "Sitio web profesional para MBR Materia - Arte decorativo artesanal",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y serve -l 3000",
+    "dev": "vercel dev",
+    "serve": "npx -y serve -l 3000",
     "start": "npx -y serve -l 3000",
     "build": "echo 'Static site - no build needed'",
     "preview": "npx -y serve -l 8080"
@@ -16,6 +17,9 @@
     "argentina",
     "landing-page"
   ],
+  "dependencies": {
+    "mercadopago": "^2.0.15"
+  },
   "author": "MBR Materia",
   "license": "MIT"
 }
