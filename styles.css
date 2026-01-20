@@ -137,17 +137,21 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     z-index: 1000;
-    padding: 20px 0;
-    box-shadow: var(--shadow-sm);
+    padding: 24px 0;
+    box-shadow: none;
     transition: var(--transition);
+    border-bottom: 1px solid rgba(212, 207, 192, 0.3);
 }
 
 .navbar.scrolled {
-    padding: 12px 0;
-    box-shadow: var(--shadow-md);
+    padding: 16px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-sm);
+    border-bottom: 1px solid transparent;
 }
 
 .navbar .container {
@@ -158,29 +162,34 @@ a {
 
 .nav-brand {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--color-text);
+    text-transform: uppercase;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 40px;
+    align-items: center;
 }
 
 .nav-menu a {
-    font-size: 0.95rem;
-    font-weight: 400;
+    font-size: 0.85rem;
+    font-weight: 500;
     color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     position: relative;
+    padding: 4px 0;
 }
 
 .nav-menu a::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     left: 0;
     width: 0;
     height: 1px;
@@ -190,6 +199,47 @@ a {
 
 .nav-menu a:hover::after {
     width: 100%;
+}
+
+.cart-nav-item {
+    margin-left: 8px;
+}
+
+.cart-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+.cart-icon-btn:hover {
+    transform: translateY(-2px);
+    color: var(--color-accent);
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-size: 0.65rem;
+    font-weight: 700;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
 }
 
 /* ===========================

@@ -56,6 +56,7 @@ animatedElements.forEach(el => {
 // Load product images from uploaded image
 // Replace these paths with your actual product photos
 const productImages = {
+    'product-combo-1': 'images/combo-floreros.jpg',
     'product-1': 'images/florero-alto.jpg',
     'product-2': 'images/porta-velas.jpg',
     'product-3': 'images/plato-decorativo.png',
